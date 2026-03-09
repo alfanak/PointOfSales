@@ -27,8 +27,8 @@ public class login_panel extends JPanel implements ActionListener
 	JLabel lbl_user = new JLabel("اسم المستخدم");
 	JLabel lbl_password = new JLabel("كلمة المرور");
 
-	custom_models.textfield txt_user = new custom_models.textfield("المدير", 15);
-	JPasswordField txt_password = new JPasswordField("المدير", 15);
+	custom_models.textfield txt_user = new custom_models.textfield("", 15);
+	JPasswordField txt_password = new JPasswordField("", 15);
 	
 	login_panel(Component parent, database db, common.update_listener update_listener)
 	{
