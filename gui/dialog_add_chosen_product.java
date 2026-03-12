@@ -21,7 +21,6 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 import common.common;
-import common.common.update_listener;
 import database.database;
 
 public class dialog_add_chosen_product extends custom_models.dialog
