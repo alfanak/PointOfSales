@@ -78,8 +78,8 @@ public class dialog_accounts extends custom_models.dialog
 			{
 				int user_id = res_users.getInt("id");				
 				
-				boolean can_edit_user = false;
-				boolean can_delete_user = false;
+				//boolean can_edit_user = false;
+				//boolean can_delete_user = false;
 				
 				JPanel tools_panel = new JPanel();
 				
