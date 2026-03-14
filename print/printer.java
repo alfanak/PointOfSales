@@ -313,6 +313,7 @@ public class printer implements Printable
 	public static class page_size
 	{
 		public static final int NORM_A4 = 0;
+		public static final int NORM_A5 = 1;
 		
 		public double width;
 		public double height;
@@ -324,6 +325,9 @@ public class printer implements Printable
 			case NORM_A4:
 				width = mm2pixel(210);
 				height = mm2pixel(297);
+			case NORM_A5:
+				width = mm2pixel(148);
+				height = mm2pixel(210);
 			}
 		}
 	}
