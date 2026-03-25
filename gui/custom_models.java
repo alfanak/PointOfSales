@@ -24,6 +24,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -72,9 +73,9 @@ public class custom_models
 	{
 		try
 		{
-			File lcd_font_file = new File(custom_models.class.getResource("/resources/lcd.ttf").getFile());
+			InputStream font_is = custom_models.class.getResourceAsStream("/resources/lcd.ttf");
 			
-			lcd_font = Font.createFont(Font.TRUETYPE_FONT, lcd_font_file);
+			lcd_font = Font.createFont(Font.TRUETYPE_FONT, font_is);
 			GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
 			ge.registerFont(lcd_font);
 			
