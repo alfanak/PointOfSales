@@ -56,7 +56,7 @@ public class dialog_clients extends custom_models.dialog
 	
 	public void update()
 	{
-		ResultSet clients = db.query("SELECT * FROM clients WHERE id");
+		ResultSet clients = db.query("SELECT * FROM clients");
 		
 		ArrayList<Object[]> data = new ArrayList<>();
 		
